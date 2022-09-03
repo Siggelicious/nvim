@@ -19,12 +19,6 @@ nnoremap <A-l> :bn<CR>
 nnoremap <A-k> :bf<CR>
 nnoremap <A-j> :bl<CR>
 
-" For navigating in insert mode with ctrl-(h/j/k/l).
-inoremap <C-h> <Left>
-inoremap <C-l> <Right>
-inoremap <C-k> <Up>
-inoremap <C-j> <Down>
-
 " Plugins will be downloaded under the specified directory.
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
