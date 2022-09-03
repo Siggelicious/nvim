@@ -1,29 +1,29 @@
 " For exiting to normal mode with 'jk'.
 inoremap jk <esc>
 
-" For navigating windows with arrow keys.
+" For navigating windows with ctrl-(h/j/k/l).
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 nnoremap <C-k> <C-w>k
 nnoremap <C-j> <C-w>j
 
-" For navigating tabs with arrow keys.
+" For navigating tabs with shift-(h/j/k/l).
 nnoremap <S-h> :tabprevious<CR>
 nnoremap <S-l> :tabnext<CR>
 nnoremap <S-k> :tabfirst<CR>
 nnoremap <S-j> :tablast<CR>
 
-" For navigating buffers with arrow keys. 
+" For navigating buffers with alt-(h/j/k/l). 
 nnoremap <A-h> :bp<CR>
 nnoremap <A-l> :bn<CR>
 nnoremap <A-k> :bf<CR>
 nnoremap <A-j> :bl<CR>
 
 " For navigating in insert mode with ctrl-(h/j/k/l).
-nnoremap <C-h> <Left>
-nnoremap <C-l> <Right>
-nnoremap <C-k> <Up>
-nnoremap <C-j> <Down>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+inoremap <C-k> <Up>
+inoremap <C-j> <Down>
 
 " Plugins will be downloaded under the specified directory.
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
