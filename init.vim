@@ -2,22 +2,28 @@
 inoremap jk <esc>
 
 " For navigating windows with arrow keys.
-nnoremap <left> <C-w>h
-nnoremap <right> <C-w>l
-nnoremap <up> <C-w>k
-nnoremap <down> <C-w>j
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+nnoremap <C-k> <C-w>k
+nnoremap <C-j> <C-w>j
 
 " For navigating tabs with arrow keys.
-nnoremap <S-left> :tabprevious<CR>
-nnoremap <S-right> :tabnext<CR>
-nnoremap <S-up> :tabfirst<CR>
-nnoremap <S-down> :tablast<CR>
+nnoremap <S-h> :tabprevious<CR>
+nnoremap <S-l> :tabnext<CR>
+nnoremap <S-k> :tabfirst<CR>
+nnoremap <S-j> :tablast<CR>
 
 " For navigating buffers with arrow keys. 
-nnoremap <C-left> :bp<CR>
-nnoremap <C-right> :bn<CR>
-nnoremap <C-up> :bf<CR>
-nnoremap <C-down> :bl<CR>
+nnoremap <A-h> :bp<CR>
+nnoremap <A-l> :bn<CR>
+nnoremap <A-k> :bf<CR>
+nnoremap <A-j> :bl<CR>
+
+" For navigating in insert mode with ctrl-(h/j/k/l).
+nnoremap <C-h> <Left>
+nnoremap <C-l> <Right>
+nnoremap <C-k> <Up>
+nnoremap <C-j> <Down>
 
 " Plugins will be downloaded under the specified directory.
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
