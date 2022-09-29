@@ -36,6 +36,15 @@ set number
 set splitbelow
 set splitright
 set clipboard=unnamedplus
+set spell spelllang=en_us
+hi clear SpellLocal
+hi clear SpellBad
+hi clear SpellRare
+hi clear SpellCap
+hi SpellLocal gui=underline cterm=underline
+hi SpellBad gui=underline cterm=underline
+hi SpellRare gui=underline cterm=underline
+hi SpellCap gui=underline cterm=underline
 
 " Autocompletion preferences.
 set completeopt-=preview 
