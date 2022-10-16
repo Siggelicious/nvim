@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/home/sigge/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["cmp-path"] = {
-    loaded = true,
-    path = "/home/sigge/.local/share/nvim/site/pack/packer/start/cmp-path",
-    url = "https://github.com/hrsh7th/cmp-path"
-  },
   ["cmp-snippy"] = {
     loaded = true,
     path = "/home/sigge/.local/share/nvim/site/pack/packer/start/cmp-snippy",
@@ -135,6 +130,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sigge/.local/share/nvim/site/pack/packer/start/trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
+  },
+  ["vim-cmake"] = {
+    loaded = true,
+    path = "/home/sigge/.local/share/nvim/site/pack/packer/start/vim-cmake",
+    url = "https://github.com/cdelledonne/vim-cmake"
   }
 }
 

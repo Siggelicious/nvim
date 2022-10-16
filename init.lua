@@ -11,7 +11,7 @@ local keymaps = {
 		['<C-b>'] = '<C-o>b',
 		['<C-u>'] = '<C-o><C-u>',
 		['<C-d>'] = '<C-o><C-d>',
-		['<C-t>'] = '<cmd>TroubleToggle<CR>'
+		['<C-t>'] = '<cmd>Trouble<CR>'
 	},
 	[{ 'n' }] = {
 		['<S-h>'] = '<cmd>tabprevious<CR>',
@@ -26,7 +26,7 @@ local keymaps = {
 		['<A-j>'] = '<cmd>bl<CR>',
 		['<A-k>'] = '<cmd>bf<CR>',
 		['<A-l>'] = '<cmd>bn<CR>',
-		['<C-t>'] = '<cmd>TroubleToggle<CR>'
+		['<C-t>'] = '<cmd>Trouble<CR>'
 	},
 }
 
@@ -53,16 +53,16 @@ require('packer').startup(function(use)
 	use 'neovim/nvim-lspconfig'
 	use 'hrsh7th/nvim-cmp'
 	use 'hrsh7th/cmp-nvim-lsp'
-	use 'hrsh7th/cmp-path'
 	use 'dcampos/nvim-snippy'
 	use 'dcampos/cmp-snippy'
 	use 'folke/tokyonight.nvim'
 	use 'kyazdani42/nvim-web-devicons'
+	use 'cdelledonne/vim-cmake'
 	use {
-		'folke/trouble.nvim',
-		requires = 'kyazdani42/nvim-web-devicons',
+		"folke/trouble.nvim",
+		requires = "kyazdani42/nvim-web-devicons",
 		config = function()
-			require('trouble').setup {}
+			require("trouble").setup {}
 		end
 	}
 	use {
